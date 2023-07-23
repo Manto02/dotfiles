@@ -3,8 +3,10 @@ My configuration dotfiles
 
 Programs needed for the configuration:
 ###I3
+-i3lock
 -feh
--pavctrl
+-playerctl
+-pactl
 -xbacklight
 -rofi
 
