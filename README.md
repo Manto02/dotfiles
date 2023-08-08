@@ -2,12 +2,17 @@
 My configuration dotfiles
 
 Programs needed for the configuration:
-#I3
--i3lock
--feh
--playerctl
--pactl
--xbacklight
--rofi
+## I3
+- i3lock 
 
-#Polybar
+- feh
+
+- playerctl
+
+- pactl
+
+- xbacklight
+
+- rofi
+
+## Polybar
