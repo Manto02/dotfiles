@@ -2,7 +2,7 @@
 My configuration dotfiles
 
 Programs needed for the configuration:
-###I3
+##I3
 -i3lock
 -feh
 -playerctl
@@ -10,6 +10,4 @@ Programs needed for the configuration:
 -xbacklight
 -rofi
 
-###Polybar
-
-###
+##Polybar
