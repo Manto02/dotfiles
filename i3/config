@@ -45,14 +45,14 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal -e tmux
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 #rofi program launcher
-bindsym $mod+d exec rofi -show run 
-
+bindsym $mod+d exec rofi -show drun 
+bindsym $mod+x exec rofi -show run 
 #polybar
 exec_always ~/.config/polybar/launch.sh
 
@@ -191,14 +191,14 @@ bindsym $mod+r mode "resize"
 #variables
 set $bg-color #383f90
 set $inactive-bg-color #383f90
-set $text-color #FFEB0B
+set $text-color #F1FF00
 set $inactive-text-color #E8DCDC
 set $urgent-bg-color #FD0101
 set $bar-bg-color #130d45
-
+set $focused-background #8066b0
 #window colors
 # mode                   border                 background                      text                    indicator
-client.focused           $bg-color              $bg-color                       $text-color
+client.focused           $bg-color              $focused-background                       $text-color
 client.unfocused         $inactive-bg-color     $inactive-bg-color              $inactive-text-color
 client.focused_inactive  $inactive-bg-color     $inactive-bg-color              $inactive-text-color
 client.urgent            $urgent-bg-color       $urgent-bg-color                $text-color
@@ -241,3 +241,8 @@ exec "xautolock -detectsleep -time 5 -locker \"i3lock -c 000000\""
 #wallpaper 
 exec_always feh --bg-scale ~/Immagini/Simpson_House.jpeg
 
+#compositor
+exec_always compton
+
+#battery script for notify when battery is discharging under a certain %
+exec_always --no-startup-id ~/.config/i3/i3-battery-popup -n -D -L 20 -l 10
