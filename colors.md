@@ -1,6 +1,14 @@
 # Gruvbox
 
 ## i3
+#window personalization
+#variables
+set $bg-color #504945
+set $inactive-bg-color #282828
+set $text-color #fe8019
+set $inactive-text-color #E8DCDC
+set $urgent-bg-color #FD0101
+set $bar-bg-color #504945
 
 ## Polybar:
 [colors]
