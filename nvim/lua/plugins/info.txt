@@ -1,0 +1,1 @@
+in questa cartella andremo a inserire tutti i file contenenti i require per i plugin che abbiamo messo nel file plugins.lua. Tramite questa configurazione nvim/lua/plugings/file_names.lua lazy e' in grado di recuperare i require e aggiornarsi ad ogni cambiamento di file. Le info sono contenute in restructure sulla pagina github di lazy.
